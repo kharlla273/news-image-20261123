@@ -1,3 +1,7 @@
+[![make.fun](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/bounty/news-image-20261123)
+[![Rank](https://make.fun/badge/news-image-20261123/kharlla273/news-image-20261123/rank.svg)](https://make.fun/bounty/news-image-20261123)
+[![Reward](https://make.fun/badge/news-image-20261123/kharlla273/news-image-20261123/reward.svg)](https://make.fun/bounty/news-image-20261123)
+
 # news-image-20261123
 
 The World in One Day — Monday 23 November 2026: a newspaper front page
@@ -22,3 +26,6 @@ MAKEFUN_OUTPUT_DIR=out python3 main.py   # copies entry.png to out/
 - `main.py` — the graded entrypoint (standard library only): verifies and
   copies `entry.png` into the grader's output directory.
 - `entry.png` — the submitted image.
+
+---
+Entered on [make.fun](https://make.fun/r/n305kcfc).
