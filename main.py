@@ -7,6 +7,11 @@ byte, to $MAKEFUN_OUTPUT_DIR/entry.png. It reads nothing else and makes
 no network calls, so two runs always write identical bytes. The copy is
 verbatim: no re-encoding, no resizing, no timestamp is embedded, so the
 output is fully determined by the input file alone.
+
+Checks, in order: the file must be non-empty, must fit under the cap,
+and must start with the eight PNG magic bytes. Any failure prints a
+message to stderr and exits 1 without writing anything, so a bad image
+can never produce a partial or misleading output file.
 """
 
 import os

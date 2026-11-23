@@ -5,6 +5,21 @@ Everything on the page is fixed text baked into this file: no input, no
 network, no clock, so every run writes the same bytes.
 Run:  python3 draw.py   (writes entry.png next to it)
 """
+# Layout of the 1024x1024 front page, top to bottom:
+#   Masthead (y 28-190): a double rule frames the paper's name in large
+#   serif caps, the date in red sans bold, and a grey tagline underneath.
+#   Lead story (y 204-~500): a red kicker, a two-line serif headline
+#   ("CLIMATE TALKS / COLLAPSE"), a wrapped body paragraph, then a navy
+#   banner carrying the pull quote about the final draft.
+#   Illustration panel (64 px tall): a deep-sea band holding a cracked
+#   globe on the left, a gold sun with rays on the right, and a caption
+#   naming the COP31 venue; heat lines rise between globe and sun.
+#   Four stories, two by two (each 112 px tall): a coloured side bar and
+#   kicker, a serif headline, and a wrapped body paragraph per story.
+#   "Also today" strip: two short items in one paragraph, then a rule
+#   and a centred grey sources line at the foot of the page.
+# Palette: warm newsprint paper, near-black ink, red and navy accents,
+# gold for the sun; DejaVu Serif for headlines, DejaVu Sans for kickers.
 import math
 
 from PIL import Image, ImageDraw, ImageFont
